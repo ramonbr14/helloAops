@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+int main()
+{
+    printf("Hello Word\n");
+    return 0;
+}
+
+Passo1: comando compilar arquivo c:
+cpp <"arquivo .c"> > <"arquivo .i de saida">
+
+Passo2: Compilar com o gcc
+gcc -Wall -S <Arquivo .i>
+
+passo3: Assembling com as
+as <"Arquivo .s"> -o <"arquivo .o>
+
+passo4: Linkando a uma biblioteca
+file <"arquivo .o">
+
+Passo5: Linkando com id
+gcc -v <"arquivo.o">
+
+Passo6: Execute o arquivo
+./a.out
+
+Comandos Adicionais
+Retirar simbolos dos arquivos binarios: strip a.out
+Numero de Bytes de um binatio: du -b a.out
+
+
+ 
